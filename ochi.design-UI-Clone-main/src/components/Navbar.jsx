@@ -32,7 +32,7 @@ function Navbar() {
     </div>
 
       <div className='links flex gap-6'>
-        {["Services", "Our Work", "About Us", "Insights", "Contact Us"].map((item, index) => (
+        {["Programs", "Events", "About", "Gallery", "Kabinet Cakraprana"].map((item, index) => (
           <div
             key={index}
             className={`group relative overflow-hidden leading-none h-[24px] ${index === 4 ? "ml-80" : ""}`}
