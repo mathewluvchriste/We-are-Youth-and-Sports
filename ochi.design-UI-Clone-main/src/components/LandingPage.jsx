@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { FaArrowUpLong } from "react-icons/fa6";
+import mascot from "../assets/mascot.png";
 
 export default function LandingPage() {
   const [isHovered, setIsHovered] = useState(false);
