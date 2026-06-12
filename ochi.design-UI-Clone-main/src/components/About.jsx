@@ -2,7 +2,6 @@ import { motion, useAnimation } from "framer-motion";
 import React, { useState } from "react";
 import { FaArrowUpLong } from "react-icons/fa6";
 import foto from "../assets/foto.png";
-import React, { useState } from "react";
 
 function About() {
     const controls = useAnimation();
