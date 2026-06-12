@@ -98,12 +98,12 @@ function About() {
                                 animate="initial"
                             >
                                 <a
-                                href="https://www.instagram.com/ppit_nanjing"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="relative z-10"
+                                    href="https://www.instagram.com/ppit_nanjing"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="relative z-10"
                                 >
-                                Instagram
+                                    Instagram
                                 </a>
 
                                 <motion.div
