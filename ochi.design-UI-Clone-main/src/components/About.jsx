@@ -196,45 +196,46 @@ function About() {
         </div>
     );
 }
-{showModal && (
-  <div className="fixed inset-0 bg-black/70 flex justify-center items-center z-[9999]">
-    <div className="bg-white text-black p-8 rounded-2xl w-[80%] max-w-3xl max-h-[80vh] overflow-y-auto">
+    {showModal && (
+      <div className="fixed inset-0 bg-black/70 flex justify-center items-center z-[9999]">
+        <div className="bg-white text-black p-8 rounded-2xl w-[80%] max-w-3xl max-h-[80vh] overflow-y-auto">
 
-      <h2 className="text-4xl font-bold mb-8">
-        Youth and Sports Department
-      </h2>
+          <h2 className="text-4xl font-bold mb-8">
+            Youth and Sports Department
+          </h2>
 
-      <div className="mb-8">
-        <h3 className="text-2xl font-semibold mb-3">
-          KOORDINATOR DEPARTMENT
-        </h3>
+          <div className="mb-8">
+            <h3 className="text-2xl font-semibold mb-3">
+              KOORDINATOR DEPARTMENT
+            </h3>
 
-        <p className="text-xl">
-          Mathew Luv Christe
-        </p>
+            <p className="text-xl">
+              Mathew Luv Christe
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-semibold mb-3">
+              ANGGOTA DEPARTMENT
+            </h3>
+
+            <ul className="list-disc ml-6 space-y-2 text-lg">
+              <li>Dennis Yegar Galideo</li>
+              <li>Dustin Wijaya</li>
+              <li>Eugenia Lysandra Lona</li>
+              <li>Nur Dwi Ningsih Rizal Keala</li>
+            </ul>
+          </div>
+
+          <button
+            onClick={() => setShowModal(false)}
+            className="mt-8 px-6 py-3 bg-black text-white rounded-full hover:bg-zinc-800 transition"
+          >
+            Close
+          </button>
+
+        </div>
       </div>
-
-      <div>
-        <h3 className="text-2xl font-semibold mb-3">
-          ANGGOTA DEPARTMENT
-        </h3>
-
-        <ul className="list-disc ml-6 space-y-2 text-lg">
-          <li>Dennis Yegar Galedio</li>
-          <li>Dustin Wijaya</li>
-          <li>Eugenia Lysandra Lona</li>
-          <li>Nur Dwi Ningsih Rizal Keala</li>
-        </ul>
-      </div>
-
-      <button
-        onClick={() => setShowModal(false)}
-        className="mt-8 px-6 py-3 bg-black text-white rounded-full hover:bg-zinc-800 transition"
-      >
-        Close
-      </button>
-
-    </div>
-  </div>
-)}
+    )}
+  </>
 export default About;
