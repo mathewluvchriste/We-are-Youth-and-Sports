@@ -181,7 +181,7 @@ function About() {
                         ease: "easeInOut",
                     }}
                 >
-                <motion.img
+            <motion.img
                 src={foto}
                 alt="YAS"
                 className="w-full h-full object-cover"
@@ -190,16 +190,7 @@ function About() {
                     hover: { scale: 1.08 },
                 }}
                 transition={{ duration: 0.8, ease: "easeInOut" }}
-                />
-                        variants={{
-                            rest: { scale: 1 },
-                            hover: { scale: 1.08 },
-                        }}
-                        transition={{
-                            duration: 0.8,
-                            ease: "easeInOut",
-                        }}
-                    />
+             />
                 </motion.div>
             </div>
         </div>
