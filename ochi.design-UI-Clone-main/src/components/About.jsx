@@ -229,7 +229,7 @@ function About() {
         </h3>
 
         <ul className="list-disc ml-6 space-y-2 text-lg">
-          <li>Dennis Yegar Galideo</li>
+          <li>Dennis Yegar Galedio</li>
           <li>Dustin Wijaya</li>
           <li>Eugenia Lysandra Lona</li>
           <li>Nur Dwi Ningsih Rizal Keala</li>
