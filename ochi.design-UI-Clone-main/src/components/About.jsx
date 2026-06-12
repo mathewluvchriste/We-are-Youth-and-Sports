@@ -1,10 +1,12 @@
 import { motion, useAnimation } from "framer-motion";
 import React, { useState } from "react";
 import { FaArrowUpLong } from "react-icons/fa6";
+import foto from "../assets/foto.png";
+import React, { useState } from "react";
 
 function About() {
     const controls = useAnimation();
-
+    const [showModal, setShowModal] = useState(false);
     const handleHoverStart = () => {
         controls.start("hover");
     };
@@ -148,9 +150,10 @@ function About() {
                     </h1>
 
                     <button
-                        onMouseEnter={handleHoverStart}
-                        onMouseLeave={handleHoverEnd}
-                        className="relative w-52 h-16 bg-zinc-800 rounded-full text-white flex items-center justify-between pl-6 pr-2 group overflow-hidden"
+                    onClick={() => setShowModal(true)}
+                    onMouseEnter={handleHoverStart}
+                    onMouseLeave={handleHoverEnd}
+                    className="relative w-52 h-16 bg-zinc-800 rounded-full text-white flex items-center justify-between pl-6 pr-2 group overflow-hidden"
                     >
                         <span className="z-10 tracking-wide font-medium">
                             READ MORE
@@ -179,12 +182,16 @@ function About() {
                         ease: "easeInOut",
                     }}
                 >
-                    <motion.div
-                        className="w-full h-full bg-cover bg-center"
-                        style={{
-                            backgroundImage:
-                                "url(https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-1326x939.jpg)",
-                        }}
+                <motion.img
+                src={foto}
+                alt="YAS"
+                className="w-full h-full object-cover"
+                variants={{
+                    rest: { scale: 1 },
+                    hover: { scale: 1.08 },
+                }}
+                transition={{ duration: 0.8, ease: "easeInOut" }}
+                />
                         variants={{
                             rest: { scale: 1 },
                             hover: { scale: 1.08 },
@@ -199,5 +206,45 @@ function About() {
         </div>
     );
 }
+{showModal && (
+  <div className="fixed inset-0 bg-black/70 flex justify-center items-center z-[9999]">
+    <div className="bg-white text-black p-8 rounded-2xl w-[80%] max-w-3xl max-h-[80vh] overflow-y-auto">
 
+      <h2 className="text-4xl font-bold mb-8">
+        Youth and Sports Department
+      </h2>
+
+      <div className="mb-8">
+        <h3 className="text-2xl font-semibold mb-3">
+          KOORDINATOR DEPARTMENT
+        </h3>
+
+        <p className="text-xl">
+          Mathew Luv Christe
+        </p>
+      </div>
+
+      <div>
+        <h3 className="text-2xl font-semibold mb-3">
+          ANGGOTA DEPARTMENT
+        </h3>
+
+        <ul className="list-disc ml-6 space-y-2 text-lg">
+          <li>Dennis Yegar Galideo</li>
+          <li>Dustin Wijaya</li>
+          <li>Eugenia Lysandra Lona</li>
+          <li>Nur Dwi Ningsih Rizal Keala</li>
+        </ul>
+      </div>
+
+      <button
+        onClick={() => setShowModal(false)}
+        className="mt-8 px-6 py-3 bg-black text-white rounded-full hover:bg-zinc-800 transition"
+      >
+        Close
+      </button>
+
+    </div>
+  </div>
+)}
 export default About;
