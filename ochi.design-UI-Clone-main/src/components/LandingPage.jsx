@@ -48,7 +48,7 @@ export default function LandingPage() {
         ))}
       </div>
       <div className="border-t-[1px] border-zinc-700 mt-20 flex justify-between items-center py-5 px-[50px]">
-        {["For public and private companies", "From the first pitch to IPO"].map(
+        {["PPIT Nanjing 25/26", "From Nothing to a New Era"].map(
           (item, index) => (
             <p
               key={index}
@@ -60,7 +60,7 @@ export default function LandingPage() {
         )}
 
         <div className="group flex justify-between items-center gap-5">
-          <Button>start the project</Button>
+          <Button>start the journey with YAS</Button>
           <motion.div
             onMouseEnter={handleHoverStart}
             onMouseLeave={handleHoverEnd}
