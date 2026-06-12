@@ -16,15 +16,30 @@ function About() {
 
     return (
         <div data-scroll data-scroll-section data-scroll-speed="-.02" className='w-full px-[50px] py-20 bg-[#ff9841] rounded-2xl text-black'>
-            <h1 className='text-[4vw] leading-[4.5vw] tracking-tight pr-[6vw]'>Ochi is a strategic presentation agency for forward-thinking businesses that need to raise funds, sell products, explain complex ideas, and hire great people.</h1>
+            <h1 className='text-[4vw] leading-[4.5vw] tracking-tight pr-[6vw]'>Youth and Sports lahir dari nol, sebuah awal sederhana dengan tujuan besar. Dibentuk untuk menghadirkan semangat baru dalam dunia olahraga di PPIT Nanjing, membuka ruang bagi kegiatan yang sebelumnya belum pernah ada, serta menginspirasi kebersamaan, energi, dan gaya baru dalam berorganisasi.</h1>
             <div className='w-full border-t-[1px] border-[#8f6441] mt-20'>
                 <div className='w-full mt-3 justify-center grid grid-cols-12 gap-6 '>
                     <div className='capitalize w-full col-span-6 grid-flow-row-dense'>
                         what can you expect:
                     </div>
-                    <div className='col-span-3'>
-                        <p className='mb-8'>We partner with the companies and startups who make the world go round — they drive the net-zero economy, revolutionize crypto treasury management, build photonic chips, and open Michelin-starred restaurants</p>
-                        <p>We believe the mix of strategy and design (with a bit of coffee) is what makes your message clear, convincing, and captivating.</p>
+                    <div className="w-1/2">
+                    <p className="mb-10">
+                        <strong>Program Kerja Bersifat Tetap</strong><br /><br />
+
+                        1a. Trail Outing – Youth and Sports<br />
+                        2a. Survei Minat Bakat – Youth and Sports<br />
+                        3a. Live Talk Show – Youth and Sports dan Nanjing Nusantara Champs<br />
+                        4a. Sports Day x Caring x Wellpar 2.0 – Youth and Sports dan Public Relation and Networking<br />
+                        5a. Weekly Post – Youth and Sports dan Nanjing Nusantara Champs
+                    </p>
+
+                    <p>
+                        <strong>Program Kerja Bersifat Insidental</strong><br /><br />
+
+                        1b. Photography by YAS – Youth and Sports<br />
+                        2b. Pembentukan Tim Basket, Mini Soccer, Mobile Legends, dan Dance – Youth and Sports<br />
+                        3b. Seleksi serta Keberangkatan Atlet Nanjing ke COPA – Youth and Sports
+                    </p>
                     </div>
                     <div className='col-span-1'></div>
                     <div className='s flex flex-col'>
