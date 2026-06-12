@@ -37,8 +37,14 @@ export default function LandingPage() {
                     ease: [0.76, 0, 0.24, 1],
                     duration: 1,
                   }}
-                  className="relative top-[1vw] w-[9vw] h-[6vw] rounded-xl overflow-hidden mr-2 bg-[url(https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg)] bg-cover"
-                />
+                  className="relative top-[1vw] w-[9vw] h-[6vw] rounded-xl overflow-hidden mr-2"
+                >
+                  <img
+                    src={mascot}
+                    alt="YAS Mascot"
+                    className="w-full h-full object-cover"
+                  />
+                </motion.div>
               )}
               <h1 className='font-["grotesk"] leading-[7vw] font-semibold uppercase text-[9vw]'>
                 {item}
