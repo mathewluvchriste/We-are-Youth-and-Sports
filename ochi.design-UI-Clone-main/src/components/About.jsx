@@ -89,9 +89,6 @@ function About() {
 
                         {[
                             "Instagram",
-                            "TikTok",
-                            "YouTube",
-                            "WhatsApp",
                         ].map((item, index) => (
                             <motion.div
                                 key={index}
@@ -100,8 +97,13 @@ function About() {
                                 initial="initial"
                                 animate="initial"
                             >
-                                <a href="#" className="relative z-10">
-                                    {item}
+                                <a
+                                href="https://www.instagram.com/ppit_nanjing"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="relative z-10"
+                                >
+                                Instagram
                                 </a>
 
                                 <motion.div
